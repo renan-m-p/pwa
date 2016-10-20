@@ -1,11 +1,20 @@
+// Version 0.5
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open('appLegal').then(cache => {
+    caches.open('applegal').then(cache => {
       return cache.addAll([
         '/',
-        '/index.html',
-        '/styles.css',
-        '/images/user.jpg'
+        'index.html',
+        'novo.html',
+        'sobre.html',
+        'contato.html',
+        'styles.css',
+        'js/material.min.js',
+        'css/material.indigo-red.min.css',
+        'css/styles.css',
+        'images/001.jpg',
+        'images/002.jpg',
+        'images/003.jpg'
       ])
       .then(() => self.skipWaiting());
     })
