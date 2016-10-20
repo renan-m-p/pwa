@@ -30,7 +30,7 @@ html, body {
   bottom: 19px;
 }
 .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
-  color: rgba(0, 0, 0, 0.54);
+  color: #000;
 }
 .mdl-layout__drawer .avatar {
   margin-bottom: 16px;
@@ -242,4 +242,17 @@ _:-ms-input-placeholder, :root .demo-graph {
   color: #fff;
   font-size: 14px;
   font-weight: 500;
+}
+
+#logo img{
+  max-width: 32px;
+  margin-right: 8px;
+}
+
+.mdl-layout-title {
+  color: #000;
+}
+
+.mdl-textfield {
+  width: 100%;
 }
