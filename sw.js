@@ -3,11 +3,13 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('applegal').then(cache => {
       return cache.addAll([
-        '/pwa/index.html',
+        '/pwa/  index.html',
         '/pwa/novo.html',
         '/pwa/sobre.html',
         '/pwa/contato.html',
         '/pwa/js/material.min.js',
+        'js/camera.js',
+        'js/install.js',
         '/pwa/css/styles.css',
         '/pwa/css/material.indigo-red.min.css',
         '/pwa/images/001.jpg',

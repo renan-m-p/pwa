@@ -256,3 +256,26 @@ _:-ms-input-placeholder, :root .demo-graph {
 .mdl-textfield {
   width: 100%;
 }
+
+.camera {
+  position: relative;
+}
+
+.camera video {
+  position: relative;
+  margin: 0 auto;
+  float: none;
+  display: block;
+  max-width: 100%;
+}
+
+#startbutton {
+  position: absolute;
+  margin: 0 auto;
+  left: calc(50% - 28px);
+  bottom: 5px;
+}
+
+canvas {
+  display: none;
+}

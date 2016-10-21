@@ -82,19 +82,29 @@
                 <input class="mdl-textfield__input" type="text" id="url">
                 <label class="mdl-textfield__label" name="url" for="url">Url...</label>
               </div>
-              <button id="camera" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-                <i class="material-icons">camera_enhance</i>                                
-              </button>
+        
+              <div class="camera">
+                <video id="video">Video stream not available.</video>
+
+                <button id="startbutton" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                  <i class="material-icons">camera_enhance</i>                                
+                </button>
+              </div>
+              <canvas id="canvas"></canvas>
+
+              <div class="mdl-cell mdl-cell--4-col" id="imagem" style="display: none">
+                <img id="photo" src="" />
+                <div class="mdl-card__actions">
+                  <span class="demo-card-image__filename">Image 001</span>
+                </div>
+              </div>
             </form>
-            <!-- <a href="novo.html" id="view-source" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">camera_enhance</i></a> -->
           </div>
-          <!-- <a href="novo.html" id="view-source" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">folder</i></a> -->
         </div>
       </main>
     </div>
     <script src="js/material.min.js"></script>
-    <script>
-
-    </script>
+    <script src="js/install.js"></script>
+    <script src="js/camera.js"></script>
   </body>
 </html>

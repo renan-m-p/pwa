@@ -1,11 +1,12 @@
-CACHE MANIFEST
+#CACHE MANIFEST
 # v1 2016-10-20
-
 index.html
 novo.html
 sobre.html
 contato.html
 js/material.min.js
+js/camera.js
+js/install.js
 css/material.indigo-red.min.css
 css/styles.css
 images/001.jpg
