@@ -22,10 +22,7 @@
                            navigator.msGetUserMedia);
 
     navigator.getMedia(
-      {
-        video: { facingMode: "environment" },
-        audio: false
-      },
+      { audio: true, video: { facingMode: { exact: "environment" } } },
       function(stream) {
         if (navigator.mozGetUserMedia) {
           video.mozSrcObject = stream;

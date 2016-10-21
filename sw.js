@@ -1,21 +1,21 @@
-// Version 0.9
+// Version 0.10
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('applegal').then(cache => {
       return cache.addAll([
-        '/pwa/index.html',
-        '/pwa/novo.html',
-        '/pwa/sobre.html',
-        '/pwa/contato.html',
-        '/pwa/js/material.min.js',
+        'index.html',
+        'novo.html',
+        'sobre.html',
+        'contato.html',
+        'js/material.min.js',
         'js/camera.js',
         'js/install.js',
-        '/pwa/css/styles.css',
-        '/pwa/css/material.indigo-red.min.css',
-        '/pwa/images/001.jpg',
-        '/pwa/images/002.jpg',
-        '/pwa/images/003.jpg',
-        '/pwa/images/logo.png'
+        'css/styles.css',
+        'css/material.indigo-red.min.css',
+        'images/001.jpg',
+        'images/002.jpg',
+        'images/003.jpg',
+        'images/logo.png'
       ])
       .then(() => self.skipWaiting());
     })
