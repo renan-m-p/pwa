@@ -1,4 +1,4 @@
-// Version 0.8
+// Version 0.9
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('applegal').then(cache => {

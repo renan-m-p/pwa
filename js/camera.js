@@ -23,9 +23,8 @@
 
     navigator.getMedia(
       {
-        video: true,
-        audio: false,
-        facingMode: 'environment'
+        video: { facingMode: "environment" },
+        audio: false
       },
       function(stream) {
         if (navigator.mozGetUserMedia) {
