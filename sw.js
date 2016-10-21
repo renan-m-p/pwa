@@ -22,6 +22,11 @@ self.addEventListener('install', e => {
   )
 });
 
+self.addEventListener('notificationclick', function(event) {
+  console.log('On notification click: ', event);
+  clients.openWindow('/');
+});
+
 self.addEventListener('activate',  event => {
   event.waitUntil(self.clients.claim());
 });

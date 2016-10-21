@@ -1,6 +1,6 @@
 (function() {
 
-  var width = 400; 
+  var width = 300; 
   var height = 0;  
 
   var streaming = false;
@@ -22,7 +22,7 @@
                            navigator.msGetUserMedia);
 
     navigator.getMedia(
-      { audio: true, video: { facingMode: { exact: "environment" } } },
+      { audio: false, video: { facingMode: { exact: "environment" } } },
       function(stream) {
         if (navigator.mozGetUserMedia) {
           video.mozSrcObject = stream;

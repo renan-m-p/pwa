@@ -80,5 +80,27 @@
     </div>
     <script src="js/material.min.js"></script>
     <script src="js/install.js"></script>
+    <script type="">
+
+        var options = {
+          icon: 'images/logo.png', 
+          body: 'Obrigado por usar este APP'
+        };
+
+        if ('Notification' in window) {
+
+          Notification.requestPermission();
+
+          if ('showNotification' in ServiceWorkerRegistration.prototype) {
+
+            navigator.serviceWorker.ready.then(function(registration){
+              registration.showNotification(title, options);
+            });
+          } else {
+            console.log('Notification classic');
+            new Notification(title, options);
+          }
+        }
+    </script>
   </body>
 </html>
