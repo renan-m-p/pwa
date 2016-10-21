@@ -94,11 +94,10 @@
           if ('showNotification' in ServiceWorkerRegistration.prototype) {
 
             navigator.serviceWorker.ready.then(function(registration){
-              registration.showNotification(title, options);
+              registration.showNotification('Uma Notifição', options);
             });
           } else {
-            console.log('Notification classic');
-            new Notification(title, options);
+            new Notification('Uma Notifição', options);
           }
         }
     </script>
