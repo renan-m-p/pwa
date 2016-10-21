@@ -11,9 +11,10 @@
   var startbutton = null;
 
   function startup() {
-    video = document.getElementById('video');
-    canvas = document.getElementById('canvas');
-    photo = document.getElementById('photo');
+
+    video       = document.getElementById('video');
+    canvas      = document.getElementById('canvas');
+    photo       = document.getElementById('photo');
     startbutton = document.getElementById('startbutton');
 
     navigator.getMedia = ( navigator.getUserMedia ||
@@ -22,14 +23,18 @@
                            navigator.msGetUserMedia);
 
     navigator.getMedia(
-      { audio: false, video: { facingMode: { exact: "environment" } } },
+      { audio: false, 
+        video: { facingMode: { exact: "environment" } } 
+      },
       function(stream) {
+
         if (navigator.mozGetUserMedia) {
           video.mozSrcObject = stream;
         } else {
           var vendorURL = window.URL || window.webkitURL;
           video.src = vendorURL.createObjectURL(stream);
         }
+        
         video.play();
       },
       function(err) {

@@ -24,7 +24,7 @@ self.addEventListener('install', e => {
 
 self.addEventListener('notificationclick', function(event) {
   console.log('On notification click: ', event);
-  clients.openWindow('/');
+  clients.openWindow('/pwa/');
 });
 
 self.addEventListener('activate',  event => {
