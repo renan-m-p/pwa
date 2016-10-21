@@ -1,9 +1,9 @@
-// Version 0.7
+// Version 0.8
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('applegal').then(cache => {
       return cache.addAll([
-        '/pwa/  index.html',
+        '/pwa/index.html',
         '/pwa/novo.html',
         '/pwa/sobre.html',
         '/pwa/contato.html',
