@@ -11,8 +11,6 @@
   "start_url": "index.html",
   "display": "standalone",
   "orientation": "portrait",
-  "theme_color": "#FF5252",
-  "background_color": "#FF5252",
-  "name": "Push Notifications codelab",
-  "gcm_sender_id": "447755010661"
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF"
 }
